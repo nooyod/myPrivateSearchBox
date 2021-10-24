@@ -1,9 +1,42 @@
-.container{
-    margin-top:5%;
-  }
-  /* Style to create scroll bar in dropdown */ 
-  .scrollable-dropdown{
-      height: auto;
-      max-height:320px;  /* Increase / Decrease value as per your need */
-      overflow-x: hidden;
-  }
+body{
+    background-color: black;
+    position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button.img-button{
+    display: none;
+    border: none;
+    background: white;
+    font-size: 1.5rem;
+}
+.fas{
+    color: red;
+}
+
+select {
+    border: solid;
+    border-width: 1px;
+    outline: none;
+    width: auto;
+    height: auto;
+    font-size: 1.5rem;
+    font-family: "Impact Roman";
+    /*font-weight: 200;*/
+    background: black;
+    color: white;
+}
+
+.keyword{
+    border : solid;
+    border-width: 1px;
+    outline: none;
+    background: transparent;
+    width: auto;
+    height: auto;
+    color: white;
+    font-size: 1.5rem;
+    font-family: "Consolas";
+}

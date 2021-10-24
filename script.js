@@ -1,17 +1,30 @@
-$(document).ready(function(e){
-    $('.search-panel .dropdown-menu').find('a').click(function(e) {
-    e.preventDefault();
-    var param = $(this).attr("href").replace("#","");
-    var concept = $(this).text();
-    $('.search-panel span#search_concept').text(concept);
-    $('.input-group #search_param').val(param);
-    });
-    });
-var a = document.getElementByTagName('a').item(0);
-$(a).on('keyup', function(evt){
-console.log(evt);
-if(evt.keycode === 13){
+const Searching = Search.prototype;
 
-alert('search?');
-} 
-}); 
+function Search() {
+  this.keyword = document.querySelector('input[name = "search"]');
+  this.engine = document.querySelector(".SelectSearch");
+  this.button = document.querySelector(".img-button");
+  this.form = document.querySelector(".search");
+
+  this.Engine();
+}
+Searching.Engine = function () {
+  this.form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    let engine = this.engine.value;
+    let keyword = this.keyword.value;
+
+    if (engine === "google") {
+      window.location.href = "https://www.google.co.kr/search?q=" + keyword;
+    } else if (engine === "naver") {
+      window.location.href = "https://search.naver.com/search.naver?query=" + keyword;
+    } else if (engine === "kakaomap") {
+        window.location.href = "https://map.kakao.com/?q=" + keyword;
+    } else if (engine === "navermap") {
+        window.location.href = "https://map.naver.com/search?query=" + keyword;
+    }
+  });
+};
+
+new Search();
