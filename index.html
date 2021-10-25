@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Amazon-like Search box</title>
+  <title>MPSB</title>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
 
 </head>
@@ -11,13 +11,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Bootstrap Search Box, Search Panel Like Amazon</title>
+    <title>BBB</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Bootstrap search box or search panel like amazon.com"/>
     <meta name="robots" content="index, follow"/>
-    <meta name="author" content="Satyendra Kumar Singh"/>
+    <meta name="author" content="SM"/>
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -25,44 +25,18 @@
 
 </head>
 <body>
- <div class="container">
-  <div class="row">    
-   <div class="col-xs-8 col-xs-offset-2">
-    <div class="input-group">
-     <div class="input-group-btn search-panel">
-      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-        <span id="search_concept">All</span> <span class="caret"></span>
-      </button>
-      <ul class="dropdown-menu scrollable-dropdown" role="menu">
-        <li><a href="#">Automotive Accesories</a></li>
-        <li><a href="#">Cell Phone Accesories</a></li>
-        <li><a href="#">Computer Accesories</a></li>
-        <li><a href="#">Health and Personal Care</a></li>
-        <li><a href="#">Automotive Accesories</a></li>
-        <li><a href="#">Cell Phone Accesories</a></li>
-        <li><a href="#">Computer Accesories</a></li>
-        <li><a href="#">Health and Personal Care</a></li>
-        <li><a href="#">Automotive Accesories</a></li>
-        <li><a href="#">Cell Phone Accesories</a></li>
-        <li><a href="#">Computer Accesories</a></li>
-        <li><a href="#">Health and Personal Care</a></li>
-        <li><a href="#">Automotive Accesories</a></li>
-        <li><a href="#">Cell Phone Accesories</a></li>
-        <li><a href="#">Computer Accesories</a></li>
-        <li><a href="#">Health and Personal Care</a></li>
-      </ul>
-     </div>
-     <input type="hidden" name="search_param" value="all" id="search_param">
-     <input type="text" class="form-control" name="x" id="search" placeholder="Search">
-     <span class="input-group-btn">
-	     <button class="btn btn-default" type="button">
-	       <span class="glyphicon glyphicon-search"></span>
-	     </button>
-	 </span>
-    </div>
-   </div>
-  </div>
-</div>
+  <form name="searchform" onSubmit="return dosearch();">
+    Search:
+    <select name="sengines">
+    <option value="http://www.google.com/search?q=" selected>Google</option>
+    <option value="http://www.altavista.com/web/results?q=">Alta Vista</option>
+    <option value="http://www.dogpile.com/info.dogpl/search/web/">Dogpile</option>
+    <option value="http://search.yahoo.com/search?p=">Yahoo!</option>
+    </select>
+    For:
+    <input type="text" name="searchterms">
+    <input type="submit" name="SearchSubmit" value="Search">
+    </form>
 
 </body>
 </html>
