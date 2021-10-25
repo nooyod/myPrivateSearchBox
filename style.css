@@ -2,7 +2,7 @@
     margin-top:5%;
   }
   /* Style to create scroll bar in dropdown */ 
-  .scrollable-dropdown{
+  select{
       height: auto;
       max-height:320px;  /* Increase / Decrease value as per your need */
       overflow-x: hidden;

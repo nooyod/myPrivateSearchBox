@@ -25,17 +25,16 @@
 
 </head>
 <body>
-  <form name="searchform" onSubmit="return dosearch();">
-    Search:
+  <form class="container" name="searchform" onSubmit="return dosearch();">
     <select name="sengines">
     <option value="http://www.google.com/search?q=" selected>Google</option>
-    <option value="http://www.altavista.com/web/results?q=">Alta Vista</option>
-    <option value="http://www.dogpile.com/info.dogpl/search/web/">Dogpile</option>
-    <option value="http://search.yahoo.com/search?p=">Yahoo!</option>
+    <option value="https://search.naver.com/search.naver?query=">Naver</option>
+    <option value="https://map.kakao.com/?q=">KakaoMap</option>
+    <option value="https://map.naver.com/search?query=">NaverMap</option>
     </select>
-    For:
-    <input type="text" name="searchterms">
-    <input type="submit" name="SearchSubmit" value="Search">
+    <br>
+    <input class="word" type="text" name="searchterms">
+    <input class="button" type="submit" name="SearchSubmit" value="Search">
     </form>
 
 </body>
