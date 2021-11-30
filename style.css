@@ -73,6 +73,7 @@ select {
     width: 25em;
     height:3em;
     border-radius: 0.25em;
+    padding: 0 4em 0 1em;
 }
 
 .word:focus {
