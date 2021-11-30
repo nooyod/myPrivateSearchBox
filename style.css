@@ -4,7 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(35deg, red, purple);
+    background: linear-gradient(35deg, black, rebeccapurple);
 }
 
 select {
@@ -16,8 +16,8 @@ select {
     outline: 0;
     font: inherit;
     /* Personalize */
-    width: 20em;
-    height: 3em;
+    width: 25em;
+    height: 2em;
     padding: 0 4em 0 1em;
     background: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg) no-repeat right 0.8em center/1.4em, linear-gradient(to left, rgba(255, 255, 255, 0.3) 3em, rgba(255, 255, 255, 0.2) 3em);
     color: white;
@@ -51,8 +51,8 @@ select {
     outline: 0;
     font: inherit;
     /* Personalize */
-    width: 20em;
-    height: 3em;
+    width: 25em;
+    height: 2em;
     padding: 0 4em 0 1em;
     background: no-repeat right 0.8em center/1.4em, linear-gradient(rgba(255, 255, 255, 0.2) 3em, rgba(255, 255, 255, 0.2) 3em);
     color: white;
@@ -64,9 +64,16 @@ select {
     /* Remove IE arrow */
 }
 
-.word option {
-    color: inherit;
-    background-color: #320a28;
+.button {
+    /* Reset */
+    font: inherit;
+    background: no-repeat right 0.8em center/1.4em, linear-gradient(rgba(255, 255, 255, 0.2) 3em, rgba(255, 255, 255, 0.2) 3em);
+    color: white;
+    border: 0;
+    outline: 0;
+    width: 25em;
+    height:3em;
+    border-radius: 0.25em;
 }
 
 .word:focus {
